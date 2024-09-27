@@ -17,7 +17,7 @@
         "z": 1,
         "attrs": {
           "name": {
-            "text": "sensor_system_actuator_statechart Export"
+            "text": "sensor_system_actuator_statechart Export Export"
           },
           "specification": {
             "text": "@EventDriven\n@SuperSteps(no)\n\ninterface:\n    in event EV_BTN_01_UP    \n    in event EV_BTN_01_DOWN\n    in event EV_MOV_DTC\n    in event EV_MOV_UDTC\n    in event EV_TKT_PRINTING\n    in event EV_TKT_DTC\n    in event EV_TKT_UDTC\n    in event EV_BRC_RISING\n    in event EV_BRC_FALLING\n    in event EV_BRC_UP\n    in event EV_IFR_DTC\n    in event EV_IFR_UDTC\n    in event EV_BTN_PRESSED\n    in event EV_BRC_DOWN\n    in event EV_LED_01_ON\n    in event EV_LED_01_OFF\n\ninternal:\n    var tick_btn_01:integer\n    var tick_tkt:integer\n    var tick_tkt_prt:integer\n    var tick_brc:integer\n    var tick_brc_up:integer\n    const DEL_BTN_MAX:integer =5\n    const DEL_TKT_MAX:integer =5\n    const DEL_TKT_PRT_MAX:integer =5\n    const DEL_BRC_MAX:integer =5\n    const DEL_BRC_UP_MAX:integer =5"
@@ -73,8 +73,8 @@
           "y": 200
         },
         "size": {
-          "width": 130,
-          "height": 60
+          "height": 60,
+          "width": 130
         },
         "angle": 0,
         "fixedRatio": false,
@@ -103,8 +103,8 @@
           "y": -105
         },
         "size": {
-          "width": 122.42708587646484,
-          "height": 60
+          "height": 60,
+          "width": 122.42708587646484
         },
         "angle": 0,
         "fixedRatio": false,
@@ -133,8 +133,8 @@
           "y": 80
         },
         "size": {
-          "width": 140,
-          "height": 90
+          "height": 90,
+          "width": 140
         },
         "angle": 0,
         "fixedRatio": false,
@@ -160,8 +160,8 @@
           "y": 80
         },
         "size": {
-          "width": 140,
-          "height": 60
+          "height": 60,
+          "width": 140
         },
         "angle": 0,
         "fixedRatio": false,
@@ -220,7 +220,6 @@
         "parent": "f9a6ac75-99ba-43dc-a6b0-c7a646a1b3d8",
         "attrs": {
           "label": {
-            "fill": "#C5C8C6",
             "refX": "50%",
             "textAnchor": "middle",
             "refY": "50%",
@@ -878,11 +877,13 @@
           "Region must have a 'default' entry."
         ],
         "embeds": [
+          "c4e0eaa4-e70d-4dc4-b064-76d15261474d",
+          "8643960a-48b5-4ffc-8905-5f7552523063",
+          "d98e6c8f-af01-4b2f-b602-c0575e017166",
           "58acd512-5ccd-46bb-8ffb-644c65dea8cf",
           "3eb582d0-618a-4aac-b905-9f81d9968eec",
           "c7ffc989-3def-48f9-9117-01e23677d399",
           "19b0de03-35c0-45c8-921f-56ac74c7bc10",
-          "c4e0eaa4-e70d-4dc4-b064-76d15261474d",
           "e30e4d86-1f99-4c08-a02b-fb0f714f1eaa",
           "8248d3ae-c30d-4e72-bd7e-75cc0ed390bc",
           "b6ccf2bf-3dbd-4a0e-9338-4ba616881e48",
@@ -916,8 +917,8 @@
           "y": -1376
         },
         "size": {
-          "width": 180,
-          "height": 75
+          "height": 75,
+          "width": 180
         },
         "angle": 0,
         "fixedRatio": false,
@@ -942,8 +943,8 @@
           "y": -1511
         },
         "size": {
-          "width": 180,
-          "height": 85
+          "height": 85,
+          "width": 180
         },
         "angle": 0,
         "fixedRatio": false,
@@ -991,8 +992,8 @@
           "y": -1210.21875
         },
         "size": {
-          "width": 180,
-          "height": 123.59375
+          "height": 123.59375,
+          "width": 180
         },
         "angle": 0,
         "fixedRatio": false,
@@ -1020,8 +1021,8 @@
           "y": -986
         },
         "size": {
-          "width": 250,
-          "height": 90
+          "height": 90,
+          "width": 250
         },
         "angle": 0,
         "fixedRatio": false,
@@ -1049,8 +1050,8 @@
           "y": -816
         },
         "size": {
-          "width": 180,
-          "height": 143.59375
+          "height": 143.59375,
+          "width": 180
         },
         "angle": 0,
         "fixedRatio": false,
@@ -1078,8 +1079,8 @@
           "y": -554.59375
         },
         "size": {
-          "width": 180,
-          "height": 133.59375
+          "height": 133.59375,
+          "width": 180
         },
         "angle": 0,
         "fixedRatio": false,
@@ -1107,8 +1108,8 @@
           "y": -341
         },
         "size": {
-          "width": 175,
-          "height": 130.390625
+          "height": 130.390625,
+          "width": 175
         },
         "angle": 0,
         "fixedRatio": false,
@@ -1133,8 +1134,8 @@
           "y": -113.5
         },
         "size": {
-          "width": 170,
-          "height": 123.59375
+          "height": 123.59375,
+          "width": 170
         },
         "angle": 0,
         "fixedRatio": false,
@@ -1171,7 +1172,6 @@
         "parent": "26330555-6955-41b0-8da7-dedfb01e176a",
         "attrs": {
           "label": {
-            "fill": "#C5C8C6",
             "refX": "50%",
             "textAnchor": "middle",
             "refY": "50%",
@@ -1338,61 +1338,6 @@
           }
         ],
         "id": "19b0de03-35c0-45c8-921f-56ac74c7bc10",
-        "z": 1762,
-        "marker": [
-          "Source and target of a transition must not be located in orthogonal regions!"
-        ],
-        "parent": "42981a10-818c-4377-b866-ca3fb88d7f3f",
-        "attrs": {}
-      },
-      {
-        "type": "Transition",
-        "source": {
-          "id": "4c123c07-a002-46bc-9d74-a520f30011fb"
-        },
-        "target": {
-          "id": "fe35d3bf-68de-4d38-a334-bf0cb951844e",
-          "anchor": {
-            "name": "topLeft",
-            "args": {
-              "dx": 85,
-              "dy": 13.9285888671875,
-              "rotate": true
-            }
-          },
-          "priority": true
-        },
-        "router": {
-          "name": "orthogonal",
-          "args": {
-            "padding": 8
-          }
-        },
-        "connector": {
-          "name": "rounded"
-        },
-        "labels": [
-          {
-            "attrs": {
-              "text": {
-                "text": "EV_BRC_UP\n[tick_brc == 0]\n/tick_brc_up = DEL_BRC_UP_MAX; raise EV_LED_01_ON"
-              }
-            },
-            "position": {
-              "distance": 0.4320998132744865,
-              "offset": -194,
-              "angle": 0
-            }
-          },
-          {
-            "attrs": {
-              "label": {
-                "text": "1"
-              }
-            }
-          }
-        ],
-        "id": "c4e0eaa4-e70d-4dc4-b064-76d15261474d",
         "z": 1762,
         "marker": [
           "Source and target of a transition must not be located in orthogonal regions!"
@@ -1876,8 +1821,8 @@
               }
             },
             "position": {
-              "distance": 0.5000000744607765,
-              "offset": 105,
+              "distance": 0.2823980548446891,
+              "offset": 19.44408688553983,
               "angle": 0
             }
           },
@@ -1959,7 +1904,7 @@
           }
         ],
         "marker": [
-          "Could not find declaration of tick_brc"
+          "Dead transition. This transition is never taken due to the precedence of completion transition."
         ],
         "parent": "4c123c07-a002-46bc-9d74-a520f30011fb",
         "attrs": {}
@@ -2117,25 +2062,19 @@
           {
             "attrs": {
               "text": {
-                "text": "EV_BRC_DOWN\n[tick_brc==0]\n/raise EV_LED_01_OFF",
-                "fill": "#555555"
+                "text": "EV_BRC_FALLING\n[tick_brc==0]\n/raise EV_LED_01_OFF"
               }
             },
             "position": {
-              "distance": 0.4954873680200383,
-              "offset": 85,
+              "distance": 0.47907779743877693,
+              "offset": 75,
               "angle": 0
             }
           },
           {
             "attrs": {
               "label": {
-                "text": "2",
-                "fill": "#555555"
-              },
-              "circleBody": {
-                "fill": "#F0F0F0",
-                "stroke": "#555555"
+                "text": "2"
               }
             }
           }
@@ -2162,7 +2101,7 @@
           }
         ],
         "marker": [
-          "Could not find declaration of EV_BRC_DOWN\nTrigger 'EV_BRC_DOWN' is no event."
+          "Dead transition. This transition is never taken due to the precedence of completion transition."
         ],
         "attrs": {}
       },
@@ -2173,8 +2112,8 @@
           "y": -770
         },
         "size": {
-          "width": 508,
-          "height": 448
+          "height": 448,
+          "width": 508
         },
         "angle": 0,
         "fixedRatio": false,
@@ -2209,8 +2148,8 @@
           "y": -712
         },
         "size": {
-          "width": 86.41667175292969,
-          "height": 60
+          "height": 60,
+          "width": 86.41667175292969
         },
         "angle": 0,
         "fixedRatio": false,
@@ -2235,8 +2174,8 @@
           "y": -465
         },
         "size": {
-          "width": 93.625,
-          "height": 60
+          "height": 60,
+          "width": 93.625
         },
         "angle": 0,
         "fixedRatio": false,
@@ -2327,22 +2266,13 @@
         },
         "labels": [
           {
-            "attrs": {
-              "text": {
-                "fill": "#555555"
-              }
-            },
+            "attrs": {},
             "position": {}
           },
           {
             "attrs": {
               "label": {
-                "text": "1",
-                "fill": "#555555"
-              },
-              "circleBody": {
-                "fill": "#F0F0F0",
-                "stroke": "#555555"
+                "text": "1"
               }
             }
           }
@@ -2382,8 +2312,7 @@
           {
             "attrs": {
               "text": {
-                "text": "EV_LED_01_ON",
-                "fill": "#555555"
+                "text": "EV_LED_01_ON"
               }
             },
             "position": {
@@ -2395,12 +2324,7 @@
           {
             "attrs": {
               "label": {
-                "text": "1",
-                "fill": "#555555"
-              },
-              "circleBody": {
-                "fill": "#F0F0F0",
-                "stroke": "#555555"
+                "text": "1"
               }
             }
           }
@@ -2443,8 +2367,7 @@
           {
             "attrs": {
               "text": {
-                "text": "EV_LED_01_OFF",
-                "fill": "#555555"
+                "text": "EV_LED_01_OFF"
               }
             },
             "position": {
@@ -2456,12 +2379,7 @@
           {
             "attrs": {
               "label": {
-                "text": "1",
-                "fill": "#555555"
-              },
-              "circleBody": {
-                "fill": "#F0F0F0",
-                "stroke": "#555555"
+                "text": "1"
               }
             }
           }
@@ -2472,11 +2390,191 @@
         "marker": [
           "Could not find declaration of EV_LED_01_OFF\nTrigger 'EV_LED_01_OFF' is no event."
         ],
-        "attrs": {
-          "line": {
-            "strokeWidth": 4
+        "attrs": {}
+      },
+      {
+        "type": "Transition",
+        "source": {
+          "id": "ea1edb16-5598-43a5-8b1e-0ec605d1b4ad"
+        },
+        "target": {
+          "id": "60b22576-7ebd-4632-8bb2-b1e2d1e9bd7b",
+          "anchor": {
+            "name": "topLeft",
+            "args": {
+              "dx": 13,
+              "dy": 41,
+              "rotate": true
+            }
+          },
+          "priority": true
+        },
+        "router": {
+          "name": "orthogonal",
+          "args": {
+            "padding": 8
           }
-        }
+        },
+        "connector": {
+          "name": "rounded"
+        },
+        "labels": [
+          {
+            "attrs": {
+              "text": {
+                "text": "EV_BRC_DOWN\n/raise EV_LED_01_OFF"
+              }
+            },
+            "position": {
+              "distance": 0.4581472028121875,
+              "offset": 85,
+              "angle": 0
+            }
+          },
+          {
+            "attrs": {
+              "label": {
+                "text": "3"
+              }
+            }
+          }
+        ],
+        "id": "d98e6c8f-af01-4b2f-b602-c0575e017166",
+        "z": 1788,
+        "parent": "42981a10-818c-4377-b866-ca3fb88d7f3f",
+        "vertices": [
+          {
+            "x": 1060,
+            "y": -10
+          },
+          {
+            "x": 1060,
+            "y": -460
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "type": "Transition",
+        "source": {
+          "id": "4c123c07-a002-46bc-9d74-a520f30011fb"
+        },
+        "target": {
+          "id": "fe35d3bf-68de-4d38-a334-bf0cb951844e",
+          "anchor": {
+            "name": "topLeft",
+            "args": {
+              "dx": 23,
+              "dy": 24.59375,
+              "rotate": true
+            }
+          },
+          "priority": true
+        },
+        "router": {
+          "name": "orthogonal",
+          "args": {
+            "padding": 8
+          }
+        },
+        "connector": {
+          "name": "rounded"
+        },
+        "labels": [
+          {
+            "attrs": {
+              "text": {
+                "text": "EV_BRC_UP\n/raise EV_LED_01_ON"
+              }
+            },
+            "position": {
+              "distance": 0.41565523680190114,
+              "offset": -5,
+              "angle": 0
+            }
+          },
+          {
+            "attrs": {
+              "label": {
+                "text": "3"
+              }
+            }
+          }
+        ],
+        "id": "8643960a-48b5-4ffc-8905-5f7552523063",
+        "z": 1790,
+        "parent": "42981a10-818c-4377-b866-ca3fb88d7f3f",
+        "vertices": [
+          {
+            "x": 1310,
+            "y": -620
+          }
+        ],
+        "marker": [
+          "Failed to parse Expression '/'."
+        ],
+        "attrs": {}
+      },
+      {
+        "type": "Transition",
+        "source": {
+          "id": "4c123c07-a002-46bc-9d74-a520f30011fb"
+        },
+        "target": {
+          "id": "fe35d3bf-68de-4d38-a334-bf0cb951844e",
+          "anchor": {
+            "name": "topLeft",
+            "args": {
+              "dx": 153,
+              "dy": 14.59375,
+              "rotate": true
+            }
+          },
+          "priority": true
+        },
+        "router": {
+          "name": "orthogonal",
+          "args": {
+            "padding": 8
+          }
+        },
+        "connector": {
+          "name": "rounded"
+        },
+        "labels": [
+          {
+            "attrs": {
+              "text": {
+                "text": "EV_BRC_RISING\n[tick_brc == 0]\n/tick_brc_up = DEL_BRC_UP_MAX; raise EV_LED_01_ON"
+              }
+            },
+            "position": {
+              "distance": 0.5169750466813784,
+              "offset": -194,
+              "angle": 0
+            }
+          },
+          {
+            "attrs": {
+              "label": {
+                "text": "1"
+              }
+            }
+          }
+        ],
+        "id": "c4e0eaa4-e70d-4dc4-b064-76d15261474d",
+        "z": 1791,
+        "marker": [
+          "Dead transition. This transition is never taken due to the precedence of completion transition."
+        ],
+        "parent": "42981a10-818c-4377-b866-ca3fb88d7f3f",
+        "vertices": [
+          {
+            "x": 1440,
+            "y": -600
+          }
+        ],
+        "attrs": {}
       }
     ]
   },
